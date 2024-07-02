@@ -11,19 +11,20 @@
         <div class="controls">
           <div class="control">
             <label for="start_at">Start at</label>
-            <input name="start_at" value="0" id="start_at"/>
+            <input name="start_at" type="number" value="0" id="start_at"/>
           </div>
         <div class="control">
           <label for="step">Step</label>
-          <input name="step" value="1" id="step"/>
-        </div>
+          <input name="step" type="number" value="1" id="step"/>
         </div>
       </div>
-      <button class="count_button">
-        <span class="current_count">
+    <div class="buttons">
+      <button class="count_button" aria-labelledby="count_button_label">
+        <span id="count_button_label" class="current_count" aria-live="polite">
           0
         </span>
       </button>
+    </div>  
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
